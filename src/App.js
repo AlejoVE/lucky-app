@@ -1,12 +1,11 @@
 import React from 'react';
-import { FormPage } from './components/FormPage';
-import { HomePage } from './components/HomePage';
-import { ThankYouPage } from './components/ThankYouPage';
+
+import { AppRouter } from './router/AppRouter';
 
 export const App = () => {
 	return (
 		<div>
-			<ThankYouPage />
+			<AppRouter />
 		</div>
 	);
 };
