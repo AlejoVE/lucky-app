@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { Button } from './Button';
 import { Logo } from './Logo';
 
 export const ThankYouPage = () => {
@@ -6,9 +8,7 @@ export const ThankYouPage = () => {
 		<div>
 			<Logo />
 			<h2>Thank you for your participation!</h2>
-			<button type='button' className='btn btn-warning'>
-				Back to Home
-			</button>
+			<Button path='home' message='Back to Home' buttonClass='warning' />
 		</div>
 	);
 };
