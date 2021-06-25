@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { registerUser } from '../helpers/registerUser';
 import { useForm } from '../hooks/useForm';
 
 const initialState = {
@@ -10,15 +11,29 @@ const initialState = {
 
 export const Form = () => {
 	const history = useHistory();
+	const [isLoading, setIsLoading] = useState(false)
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		return;
-		history.push('/thanks');
+		setIsLoading(true);
+		const response  = await registerUser();
+
+		if(response){
+			history.push('/thanks');
+			return;
+		}
+
+		setIsLoading(false);
+		alert("Error, try again")
+		
 	};
 
 	const [formValues, setFormValues] = useForm(initialState);
 	const { firstName, lastName, email } = formValues;
+
+	if(isLoading){
+		return <h3>Loading...</h3>
+	}
     
 	return (
 		<form onSubmit={handleSubmit}>
