@@ -10,11 +10,11 @@ export const HomePage = () => {
 		history.push('/register');
 	};
 	return (
-		<div className='homepage-container'>
+		<div className='container animate__animated animate__fadeIn'>
 			<Logo />
-			<img src={claim} alt='claim' />
-			<button type='button' onClick={handleCLick}>
-				<img src={button} alt='play button'></img>
+			<img className='img' src={claim} alt='claim' />
+			<button className='play-button' type='button' onClick={handleCLick}>
+				<img className='img-fluid' src={button} alt='play button'></img>
 			</button>
 		</div>
 	);

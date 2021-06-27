@@ -1,0 +1,32 @@
+.thanks-container .logo {
+  margin: 0px; }
+
+.thanks-container button {
+  width: 80%; }
+
+.thanks-container h2 {
+  font-size: 20px; }
+
+.alert {
+  text-align: center;
+  background-color: #282587;
+  color: #ffffff;
+  border-radius: 20px; }
+
+@media screen and (min-width: 1023px) {
+  .thanks-container button {
+    font-size: 35px;
+    width: 50%; }
+  .thanks-container h2 {
+    font-size: 50px; }
+  .alert {
+    width: 80%; } }
+
+@media screen and (min-width: 1025px) {
+  .thanks-container button {
+    font-size: 20px;
+    width: 20%; }
+  .thanks-container h2 {
+    font-size: 35px; } }
+
+/*# sourceMappingURL=thanksPage.css.map */

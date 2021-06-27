@@ -6,7 +6,7 @@ import {
 	Redirect,
 } from 'react-router-dom';
 
-import { FormPage } from '../components/FormPage';
+import { RegisterPage } from '../components/RegisterPage';
 import { HomePage } from '../components/HomePage';
 import { ThankYouPage } from '../components/ThankYouPage';
 
@@ -16,7 +16,7 @@ export const AppRouter = () => {
 			<div>
 				<Switch>
 					<Route path='/home' component={HomePage} />
-					<Route path='/register' component={FormPage} />
+					<Route path='/register' component={RegisterPage} />
 					<Route path='/thanks' component={ThankYouPage} />
 					<Redirect to='/home' />
 				</Switch>

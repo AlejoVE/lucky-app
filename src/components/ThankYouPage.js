@@ -1,13 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { Button } from './Button';
 import { Logo } from './Logo';
 
 export const ThankYouPage = () => {
 	return (
-		<div>
+		<div className='thanks-container container animate__animated animate__fadeIn'>
 			<Logo />
-			<h2>Thank you for your participation!</h2>
+			<div className='alert alert-success ' role='alert'>
+				<h2>Votre demande a été enregistrée, merci de participer!</h2>
+			</div>
 			<Button path='home' message='Back to Home' buttonClass='warning' />
 		</div>
 	);

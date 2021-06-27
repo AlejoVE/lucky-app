@@ -1,0 +1,51 @@
+@import './homePage.scss';
+@import './registerPage.scss';
+@import './thanksPage.scss';
+@import './_var.scss';
+
+.error {
+	border: 2px solid red;
+}
+
+body {
+	background-image: url('../assets/images/luckytest-background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	width: 80%;
+	height: 100vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 0px;
+}
+
+.button-yellow {
+	background-color: $yellow;
+	border-radius: 10px;
+}
+
+//iPad pro
+@media screen and (min-width: 1023px) {
+	.logo {
+		width: 70%;
+	}
+}
+
+//Desktop
+@media screen and (min-width: 1025px) {
+	.logo {
+		width: 30%;
+	}
+}

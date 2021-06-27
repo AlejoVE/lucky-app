@@ -1,0 +1,39 @@
+@import './var';
+
+.img {
+	width: 100%;
+	margin: auto;
+}
+
+.play-button {
+	background-color: $white;
+	display: block;
+	width: 70%;
+	margin: auto;
+	border-radius: 10px;
+}
+
+//iPad pro
+@media screen and (min-width: 1023px) {
+	.img {
+		width: 80%;
+	}
+
+	.play-button {
+		width: 50%;
+	}
+}
+
+//Desktop
+@media screen and (min-width: 1025px) {
+	.img {
+		width: 45%;
+	}
+
+	.play-button {
+		width: 25%;
+		img {
+			width: 100%;
+		}
+	}
+}

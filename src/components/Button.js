@@ -8,7 +8,10 @@ export const Button = ({ path, message, buttonClass }) => {
 		history.push(`/${path}`);
 	};
 	return (
-		<button className={`btn btn-${buttonClass}`} onClick={handleCLick}>
+		<button
+			className={`btn btn-${buttonClass} button-yellow`}
+			onClick={handleCLick}
+		>
 			{message}
 		</button>
 	);

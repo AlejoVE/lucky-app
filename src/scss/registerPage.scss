@@ -1,0 +1,121 @@
+@import './var';
+
+.form {
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	background-color: $darkBlue;
+	color: $white;
+	border-radius: 10px;
+	padding: 20px 20px 20px 20px;
+}
+
+.register-container {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	flex-direction: column;
+	height: 100vh;
+
+	h6 {
+		text-align: center;
+	}
+}
+
+.button {
+	display: block;
+	margin: auto;
+	align-self: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 50%;
+}
+
+.loading-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	width: 100%;
+}
+
+//iPad pro
+@media screen and (min-width: 1023px) {
+	.register-container {
+		font-size: 30px;
+	}
+
+	.form {
+		width: 80%;
+		margin-top: 0px;
+		font-size: 35px;
+		padding: 20px 40px 20px 40px;
+
+		input {
+			padding: 25px;
+			font-size: 32px;
+		}
+
+		input[type='checkbox'] {
+			transform: scale(2);
+			height: 100%;
+		}
+
+		h6 {
+			font-size: 30px;
+		}
+	}
+
+	.form-check {
+		label {
+			margin-left: 10px;
+		}
+	}
+
+	.button {
+		font-size: 35px;
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+}
+
+//Desktop
+@media screen and (min-width: 1025px) {
+	.register-container {
+		font-size: 10px;
+	}
+
+	.form {
+		width: 40%;
+		font-size: 18px;
+		padding: 20px 20px 20px 20px;
+
+		input {
+			padding: 5px;
+			font-size: 15px;
+		}
+
+		input[type='checkbox'] {
+			transform: none;
+			height: 80%;
+		}
+
+		h6 {
+			font-size: 15px;
+		}
+	}
+
+	.form-check {
+		label {
+			margin-left: 0px;
+			font-size: 15px;
+		}
+	}
+
+	.button {
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
