@@ -56,7 +56,7 @@ export const Form = () => {
 			setEmailExists(true);
 			Swal.fire({
 				title: 'Error!',
-				text: `${data.msg}`,
+				text: `${data?.msg || 'something went wrong'}`,
 				icon: 'error',
 				confirmButtonText: 'ok',
 			});
